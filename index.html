@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let users = [
+            {
+                name:'Ivan',
+                lastName:'Ivanov',
+            },
+            {
+                name:'Anna',
+                lastName:'Ivanova',
+            },
+            {
+                name:'Petya',
+                lastName:'Ivanov',
+            },
+        ];
+
+        // for(let i = 0; i < users.length; i++) {
+        //     document.body.innerHTML += `<div>${i}. ${users[i].name} ${users[i].lastName}</div>`
+        // }
+
+        let div = document.createElement('div')
+        div.innerHTML = '1.Ivan Ivanov'
+
+        let div2= document.createElement('div')
+        div2.innerHTML = '2.Anna Ivanova '
+        
+        let div3 = document.createElement('div')
+        div3.innerHTML = '3.Petya Ivanov'
+
+        document.body.append(div)
+        document.body.append(div2)
+        document.body.append(div3)
+        console.log(div)
+    </script>
+</body>
+</html>
